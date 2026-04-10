@@ -43,7 +43,9 @@ Usage is very simple:
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/2.1.2/gpx.min.js" defer></script>
-    <!-- ... -->
+    <style>
+      #map { height: 500px; }
+    </style>
   </head>
   <body>
     <div id="map"></div>
@@ -115,7 +117,7 @@ at your disposal:
 
 * `get_distance_imp()`: returns the total track distance in miles
 * `get_moving_pace_imp()`: returns the average moving pace in milliseconds per
-  hour
+  mile
 * `get_moving_speed_imp()`: returns the average moving speed in miles per hour
 * `get_total_speed_imp()`: returns the average total speed in miles per hour
 * `get_elevation_min_imp()`: returns the lowest elevation, in feet
